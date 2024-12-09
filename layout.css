@@ -1,0 +1,138 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/*************** Menu ****************/
+
+/*************** MOBIL SITE ****************/
+.paragraf-1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 23px;
+  color: #146ea6;
+  padding-top: 10px;
+}
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.img_tekst {
+  display: grid;
+  /* align-items: self-end; */
+}
+.img_tekst > * {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  justify-self: center;
+}
+.tekst {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+  color: #146ea6;
+  margin-top: 40px;
+  font-weight: 800;
+}
+
+/* BILLEDER I GRID */
+
+.img_1 {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin-top: 10px;
+}
+.img_2 {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.img_3 {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.img_4 {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.img_5 {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.grid_2 {
+  display: grid;
+  gap: 20px;
+}
+/*************** DESKTOP ****************/
+@media (min-width: 800px) {
+  .grid_1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin-top: 20px;
+  }
+
+  .tekst {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 30px;
+    color: #146ea6;
+    margin-top: 40px;
+    font-weight: 800;
+  }
+  .paragraf-1 {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 23px;
+    color: #146ea6;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 20px;
+  }
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .img_2 {
+    aspect-ratio: 2/4;
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+
+  .img_3 {
+    aspect-ratio: 2/1;
+    grid-column: 2/4;
+    grid-row: 1/1;
+  }
+
+  .img_4 {
+    aspect-ratio: 1/1;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  .img_5 {
+    aspect-ratio: 1/1;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .grid_2 {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 10px;
+  }
+}
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border: none;
+}
